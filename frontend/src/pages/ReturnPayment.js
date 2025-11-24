@@ -22,7 +22,7 @@ const ReturnPayment = ({ onClose, darkMode, cashierId, cashierName }) => {
     }
 
     // Fetch all products with authorization header
-    axios.get('https://raxwo-management.onrender.com/api/products', {
+    axios.get('https://fixmymaclk.onrender.com/api/products', {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -104,10 +104,10 @@ const ReturnPayment = ({ onClose, darkMode, cashierId, cashierName }) => {
   };
 
   const generateReturnReceiptHTML = (returnData) => {
-    const shopName = localStorage.getItem('shopName') || 'GENIUS';
-    const shopAddress = localStorage.getItem('shopAddress') || '#422 Thimbirigasyaya Road, Colombo 05';
-    const shopPhone = localStorage.getItem('shopPhone') || '0770235330';
-    const shopEmail = localStorage.getItem('shopEmail') || 'igentuslk@gmail.com';
+    const shopName = localStorage.getItem('shopName') || 'FixMyMac.Lk';
+    const shopAddress = localStorage.getItem('shopAddress') || '---Address---';
+    const shopPhone = localStorage.getItem('shopPhone') || '(+94)77 220 00 24';
+    const shopEmail = localStorage.getItem('shopEmail') || 'fixmymaclk@gmail.com ';
 
     const { returnInvoiceNumber, cashierName, cashierId } = returnData;
     const currentDate = new Date().toLocaleString();
@@ -329,7 +329,7 @@ const ReturnPayment = ({ onClose, darkMode, cashierId, cashierName }) => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://raxwo-management.onrender.com/api/payments/return", {
+      const response = await fetch("https://fixmymaclk.onrender.com/api/payments/return", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

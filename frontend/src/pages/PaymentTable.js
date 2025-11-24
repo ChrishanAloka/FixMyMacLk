@@ -15,8 +15,8 @@ import EditPayment from '../EditPayment';
 import ReturnPayment from '../ReturnPayment';
 import { useMemo } from 'react'; // Make sure this is imported
 
-const API_URL = 'https://raxwo-management.onrender.com/api/payments';
-const PAYMENT_WITH_CATEGORY_API_URL = 'https://raxwo-management.onrender.com/api/payments/with-itemcodes';
+const API_URL = 'https://fixmymaclk.onrender.com/api/payments';
+const PAYMENT_WITH_CATEGORY_API_URL = 'https://fixmymaclk.onrender.com/api/payments/with-itemcodes';
 
 const PaymentTable = ({ darkMode }) => {
   const [payments, setPayments] = useState([]);
@@ -122,10 +122,10 @@ const PaymentTable = ({ darkMode }) => {
   };
 
   const generatePaymentBill = (paymentData) => {
-    const shopName = localStorage.getItem('shopName') || 'GENIUS';
-    const shopAddress = localStorage.getItem('shopAddress') || '#422 Thimbirigasyaya Road, Colombo 05';
-    const shopPhone = localStorage.getItem('shopPhone') || '0770235330';
-    const shopEmail = localStorage.getItem('shopEmail') || 'igentuslk@gmail.com';
+    const shopName = localStorage.getItem('shopName') || 'FixMyMac.Lk';
+    const shopAddress = localStorage.getItem('shopAddress') || '---Address---';
+    const shopPhone = localStorage.getItem('shopPhone') || '(+94)77 220 00 24';
+    const shopEmail = localStorage.getItem('shopEmail') || 'fixmymaclk@gmail.com ';
 
     const customerName = paymentData.customerName || "SAHAN";
     const contactNumber = paymentData.contactNumber || "JB76666666";

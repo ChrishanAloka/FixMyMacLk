@@ -148,10 +148,10 @@ const PaymentPaid = ({ totalAmount, items, onClose, darkMode, cashierId, cashier
 
   // Helper to generate receipt HTML
   const generateReceiptHTML = (paymentData, context) => {
-    const shopName = localStorage.getItem('shopName') || 'GENIUS';
-    const shopAddress = localStorage.getItem('shopAddress') || '#422 Thimbirigasyaya Road, Colombo 05';
-    const shopPhone = localStorage.getItem('shopPhone') || '0770235330';
-    const shopEmail = localStorage.getItem('shopEmail') || 'igentuslk@gmail.com';
+    const shopName = localStorage.getItem('shopName') || 'FixMyMac.Lk';
+    const shopAddress = localStorage.getItem('shopAddress') || '---Address---';
+    const shopPhone = localStorage.getItem('shopPhone') || '(+94)77 220 00 24';
+    const shopEmail = localStorage.getItem('shopEmail') || 'fixmymaclk@gmail.com ';
 
     const { customerName, contactNumber, items, totalAmount, paymentMethod, invoiceNumber } = context;
     const invoiceNo = invoiceNumber.split('-')[1];
@@ -311,11 +311,10 @@ const PaymentPaid = ({ totalAmount, items, onClose, darkMode, cashierId, cashier
   };
 
   const generateCustomBill = () => {
-    const shopName = localStorage.getItem('shopName') || 'GENIUS';
-    const shopAddress = localStorage.getItem('shopAddress') || '#422 Thimbirigasyaya Road, Colombo 05';
-    const shopPhone = localStorage.getItem('shopPhone') || '0770235330';
-    const shopEmail = localStorage.getItem('shopEmail') || 'igentuslk@gmail.com';
-
+    const shopName = localStorage.getItem('shopName') || 'FixMyMac';
+    const shopAddress = localStorage.getItem('shopAddress') || '---Address---';
+    const shopPhone = localStorage.getItem('shopPhone') || '(+94)77 220 00 24';
+    const shopEmail = localStorage.getItem('shopEmail') || 'fixmymaclk@gmail.com';
     const shopLogo = localStorage.getItem('shopLogo') || '';
     const currentDate = new Date().toLocaleString();
 
@@ -585,7 +584,7 @@ const PaymentPaid = ({ totalAmount, items, onClose, darkMode, cashierId, cashier
     setLoading(true);
 
     try {
-      const response = await fetch("https://raxwo-management.onrender.com/api/payments", {
+      const response = await fetch("https://fixmymaclk.onrender.com/api/payments", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

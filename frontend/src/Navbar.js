@@ -25,7 +25,7 @@ import {
   FaSchool
 } from "react-icons/fa";
 import "./Navbar.css";
-import gelogo from './icon/Ge.logo.jpg';
+import gelogo from './icon/Ge.logo2.jpg';
 
 const Navbar = ({ darkMode, onToggleSidebar }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);

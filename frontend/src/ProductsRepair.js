@@ -17,16 +17,16 @@ import edticon from "./icon/edit.png";
 import viewicon from "./icon/statistics.png";
 import selecticon from "./icon/sucess.png";
 import { useMemo } from "react";
-import gelogo from './icon/Ge.logo.jpg';
+import gelogo from './icon/Ge.logo2.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile, faFilePdf, faFileExcel, faSearch, faPlus, faTimes, faHistory } from '@fortawesome/free-solid-svg-icons';
 import ChangeHistory from './components/ChangeHistory';
 
 
-const API_URL = "https://raxwo-management.onrender.com/api/productsRepair";
-const PRODUCT_API_URL = "https://raxwo-management.onrender.com/api/product-uploads";
-const JOB_API = 'https://raxwo-management.onrender.com/api/productsRepair';
+const API_URL = "https://fixmymaclk.onrender.com/api/productsRepair";
+const PRODUCT_API_URL = "https://fixmymaclk.onrender.com/api/product-uploads";
+const JOB_API = 'https://fixmymaclk.onrender.com/api/productsRepair';
 
 // Add flattenLogs function directly here:
 function flattenLogs(data, entityType, entityIdField, entityNameField) {
