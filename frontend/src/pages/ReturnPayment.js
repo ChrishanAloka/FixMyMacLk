@@ -105,8 +105,8 @@ const ReturnPayment = ({ onClose, darkMode, cashierId, cashierName }) => {
 
   const generateReturnReceiptHTML = (returnData) => {
     const shopName = localStorage.getItem('shopName') || 'FixMyMac.Lk';
-    const shopAddress = localStorage.getItem('shopAddress') || '---Address---';
-    const shopPhone = localStorage.getItem('shopPhone') || '(+94)77 220 00 24';
+    const shopAddress = localStorage.getItem('shopAddress') || 'Unit 325, 3rd Floor, Jana Jaya City Mall';
+    const shopPhone = localStorage.getItem('shopPhone') || '(+94)77 220 0024 / (+94)77 357 3535';
     const shopEmail = localStorage.getItem('shopEmail') || 'fixmymaclk@gmail.com ';
 
     const { returnInvoiceNumber, cashierName, cashierId } = returnData;

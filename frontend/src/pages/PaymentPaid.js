@@ -149,8 +149,8 @@ const PaymentPaid = ({ totalAmount, items, onClose, darkMode, cashierId, cashier
   // Helper to generate receipt HTML
   const generateReceiptHTML = (paymentData, context) => {
     const shopName = localStorage.getItem('shopName') || 'FixMyMac.Lk';
-    const shopAddress = localStorage.getItem('shopAddress') || '---Address---';
-    const shopPhone = localStorage.getItem('shopPhone') || '(+94)77 220 00 24';
+    const shopAddress = localStorage.getItem('shopAddress') || 'Unit 325, 3rd Floor, Jana Jaya City Mall';
+    const shopPhone = localStorage.getItem('shopPhone') || '(+94)77 220 0024 / (+94)77 357 3535';
     const shopEmail = localStorage.getItem('shopEmail') || 'fixmymaclk@gmail.com ';
 
     const { customerName, contactNumber, items, totalAmount, paymentMethod, invoiceNumber } = context;
@@ -311,10 +311,11 @@ const PaymentPaid = ({ totalAmount, items, onClose, darkMode, cashierId, cashier
   };
 
   const generateCustomBill = () => {
-    const shopName = localStorage.getItem('shopName') || 'FixMyMac';
-    const shopAddress = localStorage.getItem('shopAddress') || '---Address---';
-    const shopPhone = localStorage.getItem('shopPhone') || '(+94)77 220 00 24';
-    const shopEmail = localStorage.getItem('shopEmail') || 'fixmymaclk@gmail.com';
+    const shopName = localStorage.getItem('shopName') || 'FixMyMac.Lk';
+    const shopAddress = localStorage.getItem('shopAddress') || 'Unit 325, 3rd Floor, Jana Jaya City Mall';
+    const shopPhone = localStorage.getItem('shopPhone') || '(+94)77 220 0024 / (+94)77 357 3535';
+    const shopEmail = localStorage.getItem('shopEmail') || 'fixmymaclk@gmail.com ';
+
     const shopLogo = localStorage.getItem('shopLogo') || '';
     const currentDate = new Date().toLocaleString();
 
