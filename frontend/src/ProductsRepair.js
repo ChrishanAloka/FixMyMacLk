@@ -2289,15 +2289,37 @@ const ProductRepairList = ({ darkMode }) => {
             <div class="terms-title">TERMS & CONDITIONS FOR THE REPAIR OF DEVICES</div>
             <div>
               ${[
-                "1. The customer should receive a job sheet when an unit is handed over for repairs to EXXPLAN Repair Services Pvt Ltd and the contents filled in should be verified by the customer.",
-                "2. The customer should produce the original job sheet at the time of collecting the unit. EXXPLAN Repair Services Pvt Ltd reserves the right to refuse to return upon non-availability of the original job sheet.",
-                "3. Units repaired by EXXPLAN Repair Services Pvt Ltd are warranted for a period of 1(one) month from the date of collection of the unit by the customer.",
-                "4. EXXPLAN Repair Services Pvt Ltd ensures that all units are repaired within 7(seven) from the date of the damaged unit has been handed over.",
-                "5. The customer should collect the repaired unit within 14(Fourteen) days and if the unit is beyond repair our team will keep you informed and make necessary arrangements to collect the same.",
-                "6. EXXPLAN Repair Services Pvt Ltd will not be responsible or liable for any units not collected within days from the date of the job sheet issued.",
-                "7. EXXPLAN Repair Services Pvt Ltd will not be responsible for any damage or breakdown incurred during the process of repairing the unit.",
-                "8. The customer is deemed to accept all Terms & Conditions mentioned in the job sheet."
-              ].map(term => `<p style="margin: 3px 0;">${term}</p>`).join('')}
+                "<strong>1. Your Job Sheet, Your Device’s Security Tag</strong><br>" +
+                "• You’ll receive a job sheet when handing over your device.<br>" +
+                "• Please bring this same sheet when collecting it.<br>" +
+                "• This helps us protect your device and ensure a smooth, secure handover.",
+
+                "<strong>2. Clear & Honest Diagnosis</strong><br>" +
+                "• Our initial check is just a first look—once we open the device, we’ll confirm the exact issue and cost.<br>" +
+                "• If anything changes, we’ll always call you first before doing any work.<br>" +
+                "• If a repair isn’t safe or worth it, we’ll advise you honestly.",
+
+                "<strong>3. 3 Month Warranty for Your Peace of Mind</strong><br>" +
+                "• All completed repairs come with a 3-month warranty from the date you collect the device.<br>" +
+                "• The warranty covers the specific part repaired or replaced.<br>" +
+                "• If any unrelated issues come up, we’ll still help you with fair pricing and honest advice.",
+
+                "<strong>4. Repair Time</strong><br>" +
+                "• We’ll give you the best estimate possible, and keep you updated if anything changes.<br>" +
+                "• Your trust matters to us, so we communicate openly throughout the process.<br>" +
+                "• If your device is beyond repair, we’ll contact you to arrange collection or disposal based on your choice.",
+
+                "<strong>5. Collection Within 14 Days</strong><br>" +
+                "• Once your repair is ready, we kindly request you collect the device within 14 days.",
+
+                "<strong>6. Payment on Collection</strong><br>" +
+                "• Payment is due when the device is collected.",
+
+                "<strong>Special Notice for Liquid-Damaged Devices</strong><br>" +
+                "• We will always try our best—but liquid damage can be unpredictable.<br>" +
+                "• Because corrosion spreads over time, we cannot offer warranty on these repairs.<br>" +
+                "• Still, we do everything possible to restore your device safely."
+              ].map(term => `<p style="margin: 8px 0; line-height: 1.5;">${term}</p>`).join('')}
             </div>
           </div>
 
