@@ -1885,9 +1885,9 @@ const ProductRepairList = ({ darkMode }) => {
           <div class="bill-container">
             <div class="header">
               <h1>Repair Bill</h1>
-              <p>EXXPLAN Repair Services</p>
-              <p>456 123 Repair Lane, Tech City, TC 45678</p>
-              <p>Phone: (555) 123-4567 | Email: support@exxplan.com</p>
+              <p>FixMyMacLk Pvt Ltd</p>
+              <p>Unit 325, 3rd Floor, Jana Jaya City Mall, 10107</p>
+              <p>Phone: (+94)77 220 0024 / (+94)77 357 3535</p>
             </div>
             <div class="details">
               <p><strong>Job Number:</strong> ${repair.repairInvoice || repair.repairCode}</p>
@@ -2001,6 +2001,26 @@ const ProductRepairList = ({ darkMode }) => {
               </p>
               <p style="font-size: 16px; font-weight: bold; color: ${isPaid ? 'green' : 'red'}; border-top: 1px solid #ccc; padding-top: 10px;">
                 ${repair.rettotalAdditionalServicesAmount > 0 || repair.totalReturnCost > 0 ? `TOTAL RETURNED AMOUNT: Rs. ${repair.rettotalAdditionalServicesAmount + repair.totalReturnCost || 0}` : ''}
+              </p>
+            </div>
+
+            <!-- Warranty Notice -->
+            <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-left: 4px solid #007bff; font-size: 13px; color: #333;">
+              <h3 style="margin-top: 0; color: #007bff;">🛡️ FixMyMacLK Warranty Notice</h3>
+              <p><strong>Warranty covers manufacturer or workmanship defects only during the warranty period.</strong></p>
+              <p><strong>Display Repairs:</strong></p>
+              <ul style="margin-top: 5px; padding-left: 20px;">
+                <li>✔️ Covered only if touch stops working due to manufacturer fault</li>
+                <li>❌ Physical damage is NOT covered (cracks, lines, pressure marks, liquid damage, impact of any kind)</li>
+              </ul>
+              <p><strong>Warranty is void if:</strong></p>
+              <ul style="margin-top: 5px; padding-left: 20px;">
+                <li>Device is dropped, cracked, bent, or liquid damaged</li>
+                <li>Opened or repaired by a third party</li>
+                <li>Damage is caused by power issues or misuse</li>
+              </ul>
+              <p style="margin-top: 10px;">
+                All warranty claims are subject to inspection and approval by FixMyMacLK. If you ever have a concern during your warranty period, just reach out — we’re always happy to help 😊
               </p>
             </div>
 
@@ -2230,7 +2250,6 @@ const ProductRepairList = ({ darkMode }) => {
 
         <div class="container">
           <div class="header">
-           <!-- <h1 class="company-name">EXXPLAN Repair Services</h1> -->
             <img src=${gelogo} alt="GE Logo" style="height: 40px; margin-bottom: 0px;" />
             <p class="tagline">Your Trusted Repair Partner</p>
           </div>
